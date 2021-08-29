@@ -17,7 +17,6 @@ struct RootView: View {
             }
             .navigationBarTitle("Demos")
             .listStyle(GroupedListStyle())
-            .navigationBarTitle("Demos")
 
             Text("Select a demo")
                 .foregroundColor(.secondary)
@@ -28,6 +27,7 @@ struct RootView: View {
     private var demos: [(String, AnyView)] {
         [
             ("Activity View", AnyView(ActvivityViewDemo())),
+            ("Default Storage", AnyView(DefaultStorageDemo())),
             ("Fitting Geometry", AnyView(FittingGeometryDemo())),
             ("Layout Reader", AnyView(LayoutReaderDemo())),
             ("Media Browser", AnyView(MediaBrowserDemo())),
@@ -37,7 +37,6 @@ struct RootView: View {
             ("Refreshable", AnyView(RefreshableDemo())),
             ("Scaled Metric", AnyView(ScaledMetricDemo())),
             ("ScrollView", AnyView(ScrollViewDemo())),
-//            ("Storage", AnyView(StorageDemo())),
         ]
     }
 

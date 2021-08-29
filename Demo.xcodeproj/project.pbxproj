@@ -15,6 +15,7 @@
 		544EC4AD26DB25D900818626 /* Presentation in Frameworks */ = {isa = PBXBuildFile; productRef = 544EC4AC26DB25D900818626 /* Presentation */; };
 		544EC4B026DB25E000818626 /* Refreshable in Frameworks */ = {isa = PBXBuildFile; productRef = 544EC4AF26DB25E000818626 /* Refreshable */; };
 		544EC4B326DB25E800818626 /* ScaledMetric in Frameworks */ = {isa = PBXBuildFile; productRef = 544EC4B226DB25E800818626 /* ScaledMetric */; };
+		5474437326DBF12600590CE7 /* DefaultStorage+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5474437226DBF12600590CE7 /* DefaultStorage+Demo.swift */; };
 		54CC0A7D26DB23C6005BDCFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC0A7C26DB23C6005BDCFF /* AppDelegate.swift */; };
 		54CC0A7F26DB23C6005BDCFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC0A7E26DB23C6005BDCFF /* SceneDelegate.swift */; };
 		54CC0A8626DB23C8005BDCFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54CC0A8526DB23C8005BDCFF /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		540FE97126DB2CFD00F84266 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		5412062D26DB36B80069CE77 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5474437226DBF12600590CE7 /* DefaultStorage+Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DefaultStorage+Demo.swift"; sourceTree = "<group>"; };
 		54CC0A7926DB23C6005BDCFF /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54CC0A7C26DB23C6005BDCFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54CC0A7E26DB23C6005BDCFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5474436F26DBF0F000590CE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		54CC0A7026DB23C6005BDCFF = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +88,7 @@
 				54CC0A9026DB2425005BDCFF /* Examples */,
 				54CC0A7B26DB23C6005BDCFF /* Demo */,
 				54CC0A7A26DB23C6005BDCFF /* Products */,
+				5474436F26DBF0F000590CE7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				54CC0A9A26DB2425005BDCFF /* ActivityView+Demo.swift */,
+				5474437226DBF12600590CE7 /* DefaultStorage+Demo.swift */,
 				54CC0A9426DB2425005BDCFF /* FittingGeometry+Demo.swift */,
 				54CC0A9726DB2425005BDCFF /* LayoutReader+Demo.swift */,
 				54CC0A9126DB2425005BDCFF /* MediaBrowser+Demo.swift */,
@@ -222,6 +233,7 @@
 				54CC0A7F26DB23C6005BDCFF /* SceneDelegate.swift in Sources */,
 				540FE97226DB2CFD00F84266 /* RoundedButton.swift in Sources */,
 				54CC0A9F26DB2425005BDCFF /* MediaPicker+Demo.swift in Sources */,
+				5474437326DBF12600590CE7 /* DefaultStorage+Demo.swift in Sources */,
 				54EA0B7926DB505900E80F28 /* PageView+Demo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,9 +378,12 @@
 				DEVELOPMENT_TEAM = V2CWYL9AN8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Demo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Demo purposes";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Demo purposes";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -395,9 +410,12 @@
 				DEVELOPMENT_TEAM = V2CWYL9AN8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Demo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Demo purposes";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Demo purposes";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
