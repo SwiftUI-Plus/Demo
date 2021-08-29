@@ -36,7 +36,7 @@ struct RootView: View {
             ("Refreshable", AnyView(RefreshableDemo())),
             ("Scaled Metric", AnyView(ScaledMetricDemo())),
             ("ScrollView", AnyView(ScrollViewDemo())),
-            ("Storage", AnyView(StorageDemo())),
+//            ("Storage", AnyView(StorageDemo())),
         ]
     }
 

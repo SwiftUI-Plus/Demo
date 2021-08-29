@@ -6,7 +6,7 @@ struct ActvivityViewDemo: View {
 
     var body: some View {
         Button {
-            item = ActivityItem(items: "Some text to share", activities: [CustomActivity()])
+            item = ActivityItem(items: "Some text to share", activities: [CustomActivity()], excludedTypes: [])
         } label: {
             HStack {
                 Image(systemName: "square.and.arrow.up")

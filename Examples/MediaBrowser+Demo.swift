@@ -1,13 +1,27 @@
 import SwiftUI
+import Media
 
 struct MediaBrowserDemo: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    @FetchCollectionList(list: .folder, kind: .regularFolder) private var folders
+    @FetchAssetCollection(album: .album) private var albums
 
-struct MediaBrowserDemo_Previews: PreviewProvider {
-    static var previews: some View {
-        MediaBrowserDemo()
+    var body: some View {
+        List {
+            Section(footer: Text("Add or remove folders or albums in your photo library to see this update automatically")) { }
+                .padding(.bottom)
+
+            Section(header: Text("Folders")) {
+                ForEach(folders) { folder in
+                    Text(folder.localizedTitle ?? "Untitled")
+                }
+            }
+
+            Section(header: Text("Albums")) {
+                ForEach(albums) { album in
+                    Text(album.localizedTitle ?? "Untitled")
+                }
+            }
+        }
+        .listStyle(GroupedListStyle())
     }
 }

@@ -1,8 +1,14 @@
 import SwiftUI
+import Containers
 
 struct ScrollViewDemo: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView(contentMode: .fill) {
+            Text("Top aligned")
+            Rectangle()
+                .foregroundColor(.blue)
+            Text("Bottom aligned")
+        }
     }
 }
 

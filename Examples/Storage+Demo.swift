@@ -1,8 +1,17 @@
 import SwiftUI
+import DefaultStorage
 
 struct StorageDemo: View {
+    @DefaultStorage(wrappedValue: "", "name") private var name
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading, spacing: 20) {
+//            TextField("Name", text: $name)
+//            Text("You entered: \(name)")
+
+            Spacer()
+        }
+        .padding()
     }
 }
 
