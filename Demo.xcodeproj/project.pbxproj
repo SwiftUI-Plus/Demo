@@ -10,7 +10,6 @@
 		540FE97226DB2CFD00F84266 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FE97126DB2CFD00F84266 /* RoundedButton.swift */; };
 		544EC49E26DB25B500818626 /* ActivityView in Frameworks */ = {isa = PBXBuildFile; productRef = 544EC49D26DB25B500818626 /* ActivityView */; };
 		544EC4A126DB25BC00818626 /* Containers in Frameworks */ = {isa = PBXBuildFile; productRef = 544EC4A026DB25BC00818626 /* Containers */; };
-		544EC4A426DB25C200818626 /* DefaultStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 544EC4A326DB25C200818626 /* DefaultStorage */; };
 		544EC4A726DB25C800818626 /* MailView in Frameworks */ = {isa = PBXBuildFile; productRef = 544EC4A626DB25C800818626 /* MailView */; };
 		544EC4AA26DB25D100818626 /* Media in Frameworks */ = {isa = PBXBuildFile; productRef = 544EC4A926DB25D100818626 /* Media */; };
 		544EC4AD26DB25D900818626 /* Presentation in Frameworks */ = {isa = PBXBuildFile; productRef = 544EC4AC26DB25D900818626 /* Presentation */; };
@@ -22,7 +21,6 @@
 		54CC0A8926DB23C8005BDCFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54CC0A8726DB23C8005BDCFF /* LaunchScreen.storyboard */; };
 		54CC0A9B26DB2425005BDCFF /* MediaBrowser+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC0A9126DB2425005BDCFF /* MediaBrowser+Demo.swift */; };
 		54CC0A9C26DB2425005BDCFF /* ScaledMetric+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC0A9226DB2425005BDCFF /* ScaledMetric+Demo.swift */; };
-		54CC0A9D26DB2425005BDCFF /* Storage+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC0A9326DB2425005BDCFF /* Storage+Demo.swift */; };
 		54CC0A9E26DB2425005BDCFF /* FittingGeometry+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC0A9426DB2425005BDCFF /* FittingGeometry+Demo.swift */; };
 		54CC0A9F26DB2425005BDCFF /* MediaPicker+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC0A9526DB2425005BDCFF /* MediaPicker+Demo.swift */; };
 		54CC0AA026DB2425005BDCFF /* Refreshable+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC0A9626DB2425005BDCFF /* Refreshable+Demo.swift */; };
@@ -45,7 +43,6 @@
 		54CC0A8A26DB23C8005BDCFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54CC0A9126DB2425005BDCFF /* MediaBrowser+Demo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MediaBrowser+Demo.swift"; sourceTree = "<group>"; };
 		54CC0A9226DB2425005BDCFF /* ScaledMetric+Demo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ScaledMetric+Demo.swift"; sourceTree = "<group>"; };
-		54CC0A9326DB2425005BDCFF /* Storage+Demo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storage+Demo.swift"; sourceTree = "<group>"; };
 		54CC0A9426DB2425005BDCFF /* FittingGeometry+Demo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FittingGeometry+Demo.swift"; sourceTree = "<group>"; };
 		54CC0A9526DB2425005BDCFF /* MediaPicker+Demo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MediaPicker+Demo.swift"; sourceTree = "<group>"; };
 		54CC0A9626DB2425005BDCFF /* Refreshable+Demo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Refreshable+Demo.swift"; sourceTree = "<group>"; };
@@ -62,7 +59,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				544EC4A426DB25C200818626 /* DefaultStorage in Frameworks */,
 				544EC4AA26DB25D100818626 /* Media in Frameworks */,
 				544EC4A126DB25BC00818626 /* Containers in Frameworks */,
 				544EC4A726DB25C800818626 /* MailView in Frameworks */,
@@ -121,7 +117,6 @@
 				54CC0A9626DB2425005BDCFF /* Refreshable+Demo.swift */,
 				54CC0A9226DB2425005BDCFF /* ScaledMetric+Demo.swift */,
 				54CC0A9926DB2425005BDCFF /* ScrollView+Demo.swift */,
-				54CC0A9326DB2425005BDCFF /* Storage+Demo.swift */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -145,7 +140,6 @@
 			packageProductDependencies = (
 				544EC49D26DB25B500818626 /* ActivityView */,
 				544EC4A026DB25BC00818626 /* Containers */,
-				544EC4A326DB25C200818626 /* DefaultStorage */,
 				544EC4A626DB25C800818626 /* MailView */,
 				544EC4A926DB25D100818626 /* Media */,
 				544EC4AC26DB25D900818626 /* Presentation */,
@@ -183,7 +177,6 @@
 			packageReferences = (
 				544EC49C26DB25B500818626 /* XCRemoteSwiftPackageReference "ActivityView" */,
 				544EC49F26DB25BC00818626 /* XCRemoteSwiftPackageReference "Containers" */,
-				544EC4A226DB25C200818626 /* XCRemoteSwiftPackageReference "DefaultStorage" */,
 				544EC4A526DB25C800818626 /* XCRemoteSwiftPackageReference "MailView" */,
 				544EC4A826DB25D100818626 /* XCRemoteSwiftPackageReference "Media" */,
 				544EC4AB26DB25D900818626 /* XCRemoteSwiftPackageReference "Presentation" */,
@@ -229,7 +222,6 @@
 				54CC0A7F26DB23C6005BDCFF /* SceneDelegate.swift in Sources */,
 				540FE97226DB2CFD00F84266 /* RoundedButton.swift in Sources */,
 				54CC0A9F26DB2425005BDCFF /* MediaPicker+Demo.swift in Sources */,
-				54CC0A9D26DB2425005BDCFF /* Storage+Demo.swift in Sources */,
 				54EA0B7926DB505900E80F28 /* PageView+Demo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,14 +454,6 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		544EC4A226DB25C200818626 /* XCRemoteSwiftPackageReference "DefaultStorage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SwiftUI-Plus/DefaultStorage.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
 		544EC4A526DB25C800818626 /* XCRemoteSwiftPackageReference "MailView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftUI-Plus/MailView.git";
@@ -522,11 +506,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 544EC49F26DB25BC00818626 /* XCRemoteSwiftPackageReference "Containers" */;
 			productName = Containers;
-		};
-		544EC4A326DB25C200818626 /* DefaultStorage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 544EC4A226DB25C200818626 /* XCRemoteSwiftPackageReference "DefaultStorage" */;
-			productName = DefaultStorage;
 		};
 		544EC4A626DB25C800818626 /* MailView */ = {
 			isa = XCSwiftPackageProductDependency;
