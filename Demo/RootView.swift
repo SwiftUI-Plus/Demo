@@ -32,6 +32,7 @@ struct RootView: View {
             ("Layout Reader", AnyView(LayoutReaderDemo())),
             ("Media Browser", AnyView(MediaBrowserDemo())),
             ("Media Picker", AnyView(MediaPickerDemo())),
+            ("Page View", AnyView(PageViewDemo())),
             ("Presentation", AnyView(PresentationDemo())),
             ("Refreshable", AnyView(RefreshableDemo())),
             ("Scaled Metric", AnyView(ScaledMetricDemo())),

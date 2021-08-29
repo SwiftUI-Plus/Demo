@@ -31,6 +31,7 @@
 		54CC0AA326DB2425005BDCFF /* ScrollView+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC0A9926DB2425005BDCFF /* ScrollView+Demo.swift */; };
 		54CC0AA426DB2425005BDCFF /* ActivityView+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC0A9A26DB2425005BDCFF /* ActivityView+Demo.swift */; };
 		54CC0AA626DB2437005BDCFF /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC0AA526DB2437005BDCFF /* RootView.swift */; };
+		54EA0B7926DB505900E80F28 /* PageView+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EA0B7826DB505900E80F28 /* PageView+Demo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		54CC0A9926DB2425005BDCFF /* ScrollView+Demo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ScrollView+Demo.swift"; sourceTree = "<group>"; };
 		54CC0A9A26DB2425005BDCFF /* ActivityView+Demo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ActivityView+Demo.swift"; sourceTree = "<group>"; };
 		54CC0AA526DB2437005BDCFF /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		54EA0B7826DB505900E80F28 /* PageView+Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PageView+Demo.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				54CC0A9726DB2425005BDCFF /* LayoutReader+Demo.swift */,
 				54CC0A9126DB2425005BDCFF /* MediaBrowser+Demo.swift */,
 				54CC0A9526DB2425005BDCFF /* MediaPicker+Demo.swift */,
+				54EA0B7826DB505900E80F28 /* PageView+Demo.swift */,
 				54CC0A9826DB2425005BDCFF /* Presentation+Demo.swift */,
 				54CC0A9626DB2425005BDCFF /* Refreshable+Demo.swift */,
 				54CC0A9226DB2425005BDCFF /* ScaledMetric+Demo.swift */,
@@ -227,6 +230,7 @@
 				540FE97226DB2CFD00F84266 /* RoundedButton.swift in Sources */,
 				54CC0A9F26DB2425005BDCFF /* MediaPicker+Demo.swift in Sources */,
 				54CC0A9D26DB2425005BDCFF /* Storage+Demo.swift in Sources */,
+				54EA0B7926DB505900E80F28 /* PageView+Demo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
