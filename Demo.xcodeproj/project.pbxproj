@@ -16,6 +16,7 @@
 		544EC4B026DB25E000818626 /* Refreshable in Frameworks */ = {isa = PBXBuildFile; productRef = 544EC4AF26DB25E000818626 /* Refreshable */; };
 		544EC4B326DB25E800818626 /* ScaledMetric in Frameworks */ = {isa = PBXBuildFile; productRef = 544EC4B226DB25E800818626 /* ScaledMetric */; };
 		5474437326DBF12600590CE7 /* DefaultStorage+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5474437226DBF12600590CE7 /* DefaultStorage+Demo.swift */; };
+		5474437626DBFCB800590CE7 /* DefaultStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5474437526DBFCB800590CE7 /* DefaultStorage */; };
 		54CC0A7D26DB23C6005BDCFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC0A7C26DB23C6005BDCFF /* AppDelegate.swift */; };
 		54CC0A7F26DB23C6005BDCFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC0A7E26DB23C6005BDCFF /* SceneDelegate.swift */; };
 		54CC0A8626DB23C8005BDCFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54CC0A8526DB23C8005BDCFF /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5474437626DBFCB800590CE7 /* DefaultStorage in Frameworks */,
 				544EC4AA26DB25D100818626 /* Media in Frameworks */,
 				544EC4A126DB25BC00818626 /* Containers in Frameworks */,
 				544EC4A726DB25C800818626 /* MailView in Frameworks */,
@@ -156,6 +158,7 @@
 				544EC4AC26DB25D900818626 /* Presentation */,
 				544EC4AF26DB25E000818626 /* Refreshable */,
 				544EC4B226DB25E800818626 /* ScaledMetric */,
+				5474437526DBFCB800590CE7 /* DefaultStorage */,
 			);
 			productName = Demo;
 			productReference = 54CC0A7926DB23C6005BDCFF /* Demo.app */;
@@ -193,6 +196,7 @@
 				544EC4AB26DB25D900818626 /* XCRemoteSwiftPackageReference "Presentation" */,
 				544EC4AE26DB25E000818626 /* XCRemoteSwiftPackageReference "Refreshable" */,
 				544EC4B126DB25E800818626 /* XCRemoteSwiftPackageReference "ScaledMetric" */,
+				5474437426DBFCB800590CE7 /* XCRemoteSwiftPackageReference "DefaultStorage" */,
 			);
 			productRefGroup = 54CC0A7A26DB23C6005BDCFF /* Products */;
 			projectDirPath = "";
@@ -512,6 +516,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		5474437426DBFCB800590CE7 /* XCRemoteSwiftPackageReference "DefaultStorage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUI-plus/DefaultStorage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -549,6 +561,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 544EC4B126DB25E800818626 /* XCRemoteSwiftPackageReference "ScaledMetric" */;
 			productName = ScaledMetric;
+		};
+		5474437526DBFCB800590CE7 /* DefaultStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5474437426DBFCB800590CE7 /* XCRemoteSwiftPackageReference "DefaultStorage" */;
+			productName = DefaultStorage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
