@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		540FE97226DB2CFD00F84266 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FE97126DB2CFD00F84266 /* RoundedButton.swift */; };
+		5410991226DC5F29002B08CA /* TextView+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5410991126DC5F29002B08CA /* TextView+Demo.swift */; };
+		5410991526DC6041002B08CA /* TextView in Frameworks */ = {isa = PBXBuildFile; productRef = 5410991426DC6041002B08CA /* TextView */; };
 		544EC49E26DB25B500818626 /* ActivityView in Frameworks */ = {isa = PBXBuildFile; productRef = 544EC49D26DB25B500818626 /* ActivityView */; };
 		544EC4A126DB25BC00818626 /* Containers in Frameworks */ = {isa = PBXBuildFile; productRef = 544EC4A026DB25BC00818626 /* Containers */; };
 		544EC4A726DB25C800818626 /* MailView in Frameworks */ = {isa = PBXBuildFile; productRef = 544EC4A626DB25C800818626 /* MailView */; };
@@ -36,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		540FE97126DB2CFD00F84266 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		5410991126DC5F29002B08CA /* TextView+Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextView+Demo.swift"; sourceTree = "<group>"; };
 		5412062D26DB36B80069CE77 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5474437226DBF12600590CE7 /* DefaultStorage+Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DefaultStorage+Demo.swift"; sourceTree = "<group>"; };
 		54CC0A7926DB23C6005BDCFF /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +69,7 @@
 				544EC4AA26DB25D100818626 /* Media in Frameworks */,
 				544EC4A126DB25BC00818626 /* Containers in Frameworks */,
 				544EC4A726DB25C800818626 /* MailView in Frameworks */,
+				5410991526DC6041002B08CA /* TextView in Frameworks */,
 				544EC4B326DB25E800818626 /* ScaledMetric in Frameworks */,
 				544EC4AD26DB25D900818626 /* Presentation in Frameworks */,
 				544EC4B026DB25E000818626 /* Refreshable in Frameworks */,
@@ -130,6 +134,7 @@
 				54CC0A9626DB2425005BDCFF /* Refreshable+Demo.swift */,
 				54CC0A9226DB2425005BDCFF /* ScaledMetric+Demo.swift */,
 				54CC0A9926DB2425005BDCFF /* ScrollView+Demo.swift */,
+				5410991126DC5F29002B08CA /* TextView+Demo.swift */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 				544EC4AF26DB25E000818626 /* Refreshable */,
 				544EC4B226DB25E800818626 /* ScaledMetric */,
 				5474437526DBFCB800590CE7 /* DefaultStorage */,
+				5410991426DC6041002B08CA /* TextView */,
 			);
 			productName = Demo;
 			productReference = 54CC0A7926DB23C6005BDCFF /* Demo.app */;
@@ -197,6 +203,7 @@
 				544EC4AE26DB25E000818626 /* XCRemoteSwiftPackageReference "Refreshable" */,
 				544EC4B126DB25E800818626 /* XCRemoteSwiftPackageReference "ScaledMetric" */,
 				5474437426DBFCB800590CE7 /* XCRemoteSwiftPackageReference "DefaultStorage" */,
+				5410991326DC6041002B08CA /* XCRemoteSwiftPackageReference "TextView" */,
 			);
 			productRefGroup = 54CC0A7A26DB23C6005BDCFF /* Products */;
 			projectDirPath = "";
@@ -236,6 +243,7 @@
 				54CC0AA626DB2437005BDCFF /* RootView.swift in Sources */,
 				54CC0A7F26DB23C6005BDCFF /* SceneDelegate.swift in Sources */,
 				540FE97226DB2CFD00F84266 /* RoundedButton.swift in Sources */,
+				5410991226DC5F29002B08CA /* TextView+Demo.swift in Sources */,
 				54CC0A9F26DB2425005BDCFF /* MediaPicker+Demo.swift in Sources */,
 				5474437326DBF12600590CE7 /* DefaultStorage+Demo.swift in Sources */,
 				54EA0B7926DB505900E80F28 /* PageView+Demo.swift in Sources */,
@@ -460,6 +468,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		5410991326DC6041002B08CA /* XCRemoteSwiftPackageReference "TextView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUI-Plus/TextView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		544EC49C26DB25B500818626 /* XCRemoteSwiftPackageReference "ActivityView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftUI-Plus/ActivityView.git";
@@ -527,6 +543,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5410991426DC6041002B08CA /* TextView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5410991326DC6041002B08CA /* XCRemoteSwiftPackageReference "TextView" */;
+			productName = TextView;
+		};
 		544EC49D26DB25B500818626 /* ActivityView */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 544EC49C26DB25B500818626 /* XCRemoteSwiftPackageReference "ActivityView" */;
