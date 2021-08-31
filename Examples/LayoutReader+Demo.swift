@@ -3,13 +3,10 @@ import Containers
 
 struct LayoutReaderDemo: View {
     var body: some View {
-        LayoutReader { layout in
-            ZStack {
-                Rectangle()
-                    .foregroundColor(.red)
-
+        SwiftUI.ScrollView {
+            LayoutReader { layout in
                 VStack(spacing: 10) {
-                    Text("Readable width: \(Int(layout.frame(in: .readable).width))")
+                    Text("Readable width: \(Int(layout.size(in: .readable).width))")
                         .font(.headline)
 
                     Text("Rotate or change the text size to see it adjust automatically")
@@ -17,8 +14,10 @@ struct LayoutReaderDemo: View {
                 .foregroundColor(Color(.systemBackground))
                 .multilineTextAlignment(.center)
                 .padding()
+                .background(Color.red)
+                .frame(maxWidth: layout.size(in: .readable).width)
             }
-            .frame(maxWidth: layout.frame(in: .readable).width)
+            .background(Color.gray)
         }
     }
 }
