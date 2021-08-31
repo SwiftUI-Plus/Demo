@@ -3,7 +3,7 @@ import Containers
 
 struct ScrollViewDemo: View {
     var body: some View {
-        ScrollView(contentMode: .fill) {
+        ScrollableView {
             Text("Top aligned")
             Rectangle()
                 .foregroundColor(.blue)

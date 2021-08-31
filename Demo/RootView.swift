@@ -38,6 +38,7 @@ struct RootView: View {
             ("Scaled Metric", AnyView(ScaledMetricDemo())),
             ("ScrollView", AnyView(ScrollViewDemo())),
             ("TextView", AnyView(TextViewDemo())),
+            ("UIKitView", AnyView(UIKitViewDemo())),
         ]
     }
 

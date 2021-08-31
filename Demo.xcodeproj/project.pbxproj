@@ -17,6 +17,7 @@
 		544EC4AD26DB25D900818626 /* Presentation in Frameworks */ = {isa = PBXBuildFile; productRef = 544EC4AC26DB25D900818626 /* Presentation */; };
 		544EC4B026DB25E000818626 /* Refreshable in Frameworks */ = {isa = PBXBuildFile; productRef = 544EC4AF26DB25E000818626 /* Refreshable */; };
 		544EC4B326DB25E800818626 /* ScaledMetric in Frameworks */ = {isa = PBXBuildFile; productRef = 544EC4B226DB25E800818626 /* ScaledMetric */; };
+		5470D21026DE9B95009C92DF /* UIKitView+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5470D20F26DE9B95009C92DF /* UIKitView+Demo.swift */; };
 		5474437326DBF12600590CE7 /* DefaultStorage+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5474437226DBF12600590CE7 /* DefaultStorage+Demo.swift */; };
 		5474437626DBFCB800590CE7 /* DefaultStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5474437526DBFCB800590CE7 /* DefaultStorage */; };
 		54CC0A7D26DB23C6005BDCFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC0A7C26DB23C6005BDCFF /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 		540FE97126DB2CFD00F84266 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		5410991126DC5F29002B08CA /* TextView+Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextView+Demo.swift"; sourceTree = "<group>"; };
 		5412062D26DB36B80069CE77 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5470D20F26DE9B95009C92DF /* UIKitView+Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKitView+Demo.swift"; sourceTree = "<group>"; };
 		5474437226DBF12600590CE7 /* DefaultStorage+Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DefaultStorage+Demo.swift"; sourceTree = "<group>"; };
 		54CC0A7926DB23C6005BDCFF /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54CC0A7C26DB23C6005BDCFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				54CC0A9226DB2425005BDCFF /* ScaledMetric+Demo.swift */,
 				54CC0A9926DB2425005BDCFF /* ScrollView+Demo.swift */,
 				5410991126DC5F29002B08CA /* TextView+Demo.swift */,
+				5470D20F26DE9B95009C92DF /* UIKitView+Demo.swift */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				54CC0AA426DB2425005BDCFF /* ActivityView+Demo.swift in Sources */,
 				54CC0A7D26DB23C6005BDCFF /* AppDelegate.swift in Sources */,
 				54CC0A9B26DB2425005BDCFF /* MediaBrowser+Demo.swift in Sources */,
+				5470D21026DE9B95009C92DF /* UIKitView+Demo.swift in Sources */,
 				54CC0A9E26DB2425005BDCFF /* FittingGeometry+Demo.swift in Sources */,
 				54CC0A9C26DB2425005BDCFF /* ScaledMetric+Demo.swift in Sources */,
 				54CC0AA026DB2425005BDCFF /* Refreshable+Demo.swift in Sources */,
