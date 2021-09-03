@@ -5,33 +5,28 @@ struct ScaledMetricDemo: View {
     @ScaledValue private var fontSize: CGFloat = 17
 
     var body: some View {
-        ScrollView {
-            VStack(spacing: 30) {
-                HStack {
-                    Text("Change your text size to see it in action")
+        List {
+            Section(footer: Text("Change your dynamic text size to see it in action").padding(.top, 5)) {
+                HStack(alignment: .firstTextBaseline) {
+                    Text("Fixed")
+                        .font(.callout)
+                        .foregroundColor(.secondary)
                     Spacer()
+                    Text(".system(size: 17)")
+                        .font(.system(size: 17, design: .monospaced))
                 }
-                .foregroundColor(.secondary)
+                .font(.system(size: 17))
 
-                VStack(spacing: 20) {
-                    HStack {
-                        Text("Fixed")
-                        Spacer()
-                        Text(".system(size: 17)")
-                            .font(.system(size: 17, design: .monospaced))
-                    }
-                    .font(.system(size: 17))
-
-                    HStack {
-                        Text("Scaled")
-                        Spacer()
-                        Text(".system(size: scaledValue)")
-                            .font(.system(size: fontSize, design: .monospaced))
-                    }
-                    .font(.system(size: fontSize))
+                HStack(alignment: .firstTextBaseline) {
+                    Text("Scaled")
+                        .font(.callout)
+                        .foregroundColor(.secondary)
+                    Spacer()
+                    Text(".system(size: scaledValue)")
+                        .font(.system(size: fontSize, design: .monospaced))
                 }
+                .font(.system(size: fontSize))
             }
-            .padding()
         }
     }
 }

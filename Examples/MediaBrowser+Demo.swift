@@ -7,8 +7,8 @@ struct MediaBrowserDemo: View {
 
     var body: some View {
         List {
-            Section(footer: Text("Add or remove folders or albums in your photo library to see this update automatically")) { }
-                .padding(.bottom)
+            Text("Add/remove folders or albums in your photo library to see this update automatically")
+                .padding(.vertical, 10)
 
             Section(header: Text("Folders")) {
                 ForEach(folders) { folder in
@@ -22,6 +22,5 @@ struct MediaBrowserDemo: View {
                 }
             }
         }
-        .listStyle(GroupedListStyle())
     }
 }

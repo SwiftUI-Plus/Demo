@@ -5,8 +5,8 @@ struct PageViewDemo: View {
     @State private var page: Int = 0
 
     private var colors: [Color] = [
-        .red,
         .blue,
+        .red,
         .yellow,
         .green,
         .orange

@@ -3,23 +3,31 @@ import Containers
 
 struct FittingGeometryDemo: View {
     var body: some View {
-        VStack {
-            Text("The reader hugs its content")
+        ScrollView {
+            VStack {
+                FittingGeometryReader { _ in
+                    ZStack {
+                        Rectangle()
+                            .foregroundColor(.blue)
+                            .frame(height: 44)
 
-            FittingGeometryReader { _ in
-                ZStack {
-                    Rectangle()
-                        .foregroundColor(.red)
-                        .frame(height: 44)
+                        Text("Content")
+                            .foregroundColor(Color(.systemBackground))
+                    }
+                    .padding()
+                }
+                .background(Color.gray)
+                .multilineTextAlignment(.center)
 
-                    Text("Content")
-                        .foregroundColor(Color(.systemBackground))
+                HStack {
+                    Text("Note the GeometryReader hugs its content instead of taking up all available space.")
+                        .font(.footnote)
+                        .foregroundColor(.secondary)
+
+                    Spacer()
                 }
             }
-            .padding()
-            .background(Color.gray)
-            .padding()
-            .multilineTextAlignment(.center)
+            .padding(.horizontal, 20)
         }
     }
 }

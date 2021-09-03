@@ -7,13 +7,12 @@ public struct DefaultStorageDemo: View {
 
     public var body: some View {
         List {
-            Section(footer: Text("These 2 views are backed by different properties that point to the same 'key' demonstrating that dynamic properties ensure the views update in realtime.").padding(.top)) {
+            Section(footer: Text("These 2 views are backed by different properties that point to the same 'key' demonstrating that dynamic properties ensure the views update in realtime.").padding(.top, 5)) {
                 TextField("Enter some text", text: $textFieldName)
                 Text(textName.isEmpty ? "Empty value" : textName)
                     .foregroundColor(Color(.placeholderText))
             }
         }
-        .listStyle(GroupedListStyle())
     }
 }
 

@@ -6,12 +6,8 @@ struct TextViewDemo: View {
     @State private var text2: String = ""
 
     var body: some View {
-        VStack(spacing: 20) {
+        VStack(spacing: 40) {
             VStack {
-                Text("Scrollable")
-                    .font(.footnote)
-                    .foregroundColor(.secondary)
-
                 TextView($text1)
                     .placeholder("Placeholder")
                     .enableScrolling(true)
@@ -22,14 +18,18 @@ struct TextViewDemo: View {
                             .stroke(lineWidth: 1)
                             .foregroundColor(Color(.placeholderText))
                     )
-                    .padding()
+
+                HStack {
+                    Text("Height is fixed but scrolling is enabled when the number of lines grows beyond the bounds.")
+                        .font(.footnote)
+                        .foregroundColor(.secondary)
+
+                    Spacer()
+                }
             }
+            .padding(.horizontal)
 
             VStack {
-                Text("Autosizing")
-                    .font(.footnote)
-                    .foregroundColor(.secondary)
-
                 TextView($text2)
                     .placeholder("Placeholder")
                     .padding(10)
@@ -38,8 +38,16 @@ struct TextViewDemo: View {
                             .stroke(lineWidth: 1)
                             .foregroundColor(Color(.placeholderText))
                     )
-                    .padding()
+
+                HStack {
+                    Text("Automatically grows as your type.")
+                        .font(.footnote)
+                        .foregroundColor(.secondary)
+
+                    Spacer()
+                }
             }
+            .padding(.horizontal)
 
             Spacer()
         }

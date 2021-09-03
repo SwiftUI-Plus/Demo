@@ -8,16 +8,23 @@ struct LayoutReaderDemo: View {
                 VStack(spacing: 10) {
                     Text("Readable width: \(Int(layout.size(in: .readable).width))")
                         .font(.headline)
-
-                    Text("Rotate or change the text size to see it adjust automatically")
+                        .padding()
                 }
                 .foregroundColor(Color(.systemBackground))
                 .multilineTextAlignment(.center)
-                .padding()
-                .background(Color.red)
                 .frame(maxWidth: layout.size(in: .readable).width)
+                .background(Color.blue)
             }
             .background(Color.gray)
+
+            HStack {
+                Text("Rotate or change the dynamic text size to see the width automatically adapt as expected.")
+                    .font(.footnote)
+                    .foregroundColor(.secondary)
+
+                Spacer()
+            }
+            .padding(.horizontal, 20)
         }
     }
 }

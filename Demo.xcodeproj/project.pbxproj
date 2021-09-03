@@ -18,6 +18,17 @@
 		544EC4B026DB25E000818626 /* Refreshable in Frameworks */ = {isa = PBXBuildFile; productRef = 544EC4AF26DB25E000818626 /* Refreshable */; };
 		544EC4B326DB25E800818626 /* ScaledMetric in Frameworks */ = {isa = PBXBuildFile; productRef = 544EC4B226DB25E800818626 /* ScaledMetric */; };
 		5470D21026DE9B95009C92DF /* UIKitView+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5470D20F26DE9B95009C92DF /* UIKitView+Demo.swift */; };
+		5470D21326DEA7FA009C92DF /* WebViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5470D21226DEA7FA009C92DF /* WebViewDemo.swift */; };
+		5470D21726DEEB6D009C92DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5470D21626DEEB6D009C92DF /* ContentView.swift */; };
+		5473BC6726E23AA400C7F85B /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5473BC6026E23AA400C7F85B /* ContactListView.swift */; };
+		5473BC6826E23AA400C7F85B /* ContactView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5473BC6226E23AA400C7F85B /* ContactView+Helpers.swift */; };
+		5473BC6926E23AA400C7F85B /* ContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5473BC6326E23AA400C7F85B /* ContactRow.swift */; };
+		5473BC6A26E23AA400C7F85B /* ContactView+Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5473BC6426E23AA400C7F85B /* ContactView+Sections.swift */; };
+		5473BC6B26E23AA400C7F85B /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5473BC6526E23AA400C7F85B /* ContactView.swift */; };
+		5473BC6C26E23AA400C7F85B /* GroupListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5473BC6626E23AA400C7F85B /* GroupListView.swift */; };
+		5473BC6F26E23AD700C7F85B /* Connections in Frameworks */ = {isa = PBXBuildFile; productRef = 5473BC6E26E23AD700C7F85B /* Connections */; };
+		5473BC7126E23C2D00C7F85B /* ConnectionsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5473BC7026E23C2D00C7F85B /* ConnectionsDemo.swift */; };
+		5473BC7326E23DF900C7F85B /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5473BC7226E23DF900C7F85B /* Color.swift */; };
 		5474437326DBF12600590CE7 /* DefaultStorage+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5474437226DBF12600590CE7 /* DefaultStorage+Demo.swift */; };
 		5474437626DBFCB800590CE7 /* DefaultStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5474437526DBFCB800590CE7 /* DefaultStorage */; };
 		54CC0A7D26DB23C6005BDCFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC0A7C26DB23C6005BDCFF /* AppDelegate.swift */; };
@@ -42,6 +53,16 @@
 		5410991126DC5F29002B08CA /* TextView+Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextView+Demo.swift"; sourceTree = "<group>"; };
 		5412062D26DB36B80069CE77 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5470D20F26DE9B95009C92DF /* UIKitView+Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKitView+Demo.swift"; sourceTree = "<group>"; };
+		5470D21226DEA7FA009C92DF /* WebViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewDemo.swift; sourceTree = "<group>"; };
+		5470D21626DEEB6D009C92DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5473BC6026E23AA400C7F85B /* ContactListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
+		5473BC6226E23AA400C7F85B /* ContactView+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ContactView+Helpers.swift"; sourceTree = "<group>"; };
+		5473BC6326E23AA400C7F85B /* ContactRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactRow.swift; sourceTree = "<group>"; };
+		5473BC6426E23AA400C7F85B /* ContactView+Sections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ContactView+Sections.swift"; sourceTree = "<group>"; };
+		5473BC6526E23AA400C7F85B /* ContactView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		5473BC6626E23AA400C7F85B /* GroupListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupListView.swift; sourceTree = "<group>"; };
+		5473BC7026E23C2D00C7F85B /* ConnectionsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionsDemo.swift; sourceTree = "<group>"; };
+		5473BC7226E23DF900C7F85B /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		5474437226DBF12600590CE7 /* DefaultStorage+Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DefaultStorage+Demo.swift"; sourceTree = "<group>"; };
 		54CC0A7926DB23C6005BDCFF /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54CC0A7C26DB23C6005BDCFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +91,7 @@
 				5474437626DBFCB800590CE7 /* DefaultStorage in Frameworks */,
 				544EC4AA26DB25D100818626 /* Media in Frameworks */,
 				544EC4A126DB25BC00818626 /* Containers in Frameworks */,
+				5473BC6F26E23AD700C7F85B /* Connections in Frameworks */,
 				544EC4A726DB25C800818626 /* MailView in Frameworks */,
 				5410991526DC6041002B08CA /* TextView in Frameworks */,
 				544EC4B326DB25E800818626 /* ScaledMetric in Frameworks */,
@@ -82,6 +104,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5473BC5F26E23A9100C7F85B /* Connections */ = {
+			isa = PBXGroup;
+			children = (
+				5473BC6026E23AA400C7F85B /* ContactListView.swift */,
+				5473BC6526E23AA400C7F85B /* ContactView.swift */,
+				5473BC6626E23AA400C7F85B /* GroupListView.swift */,
+				5473BC6126E23AA400C7F85B /* Support */,
+			);
+			path = Connections;
+			sourceTree = "<group>";
+		};
+		5473BC6126E23AA400C7F85B /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				5473BC6226E23AA400C7F85B /* ContactView+Helpers.swift */,
+				5473BC6326E23AA400C7F85B /* ContactRow.swift */,
+				5473BC6426E23AA400C7F85B /* ContactView+Sections.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		5473BC7526E23E2500C7F85B /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				540FE97126DB2CFD00F84266 /* RoundedButton.swift */,
+				5473BC7226E23DF900C7F85B /* Color.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		5474436F26DBF0F000590CE7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +146,7 @@
 			children = (
 				5412062D26DB36B80069CE77 /* README.md */,
 				54CC0A9026DB2425005BDCFF /* Examples */,
+				5473BC7526E23E2500C7F85B /* Support */,
 				54CC0A7B26DB23C6005BDCFF /* Demo */,
 				54CC0A7A26DB23C6005BDCFF /* Products */,
 				5474436F26DBF0F000590CE7 /* Frameworks */,
@@ -114,7 +167,7 @@
 				54CC0A7C26DB23C6005BDCFF /* AppDelegate.swift */,
 				54CC0A7E26DB23C6005BDCFF /* SceneDelegate.swift */,
 				54CC0AA526DB2437005BDCFF /* RootView.swift */,
-				540FE97126DB2CFD00F84266 /* RoundedButton.swift */,
+				5470D21626DEEB6D009C92DF /* ContentView.swift */,
 				54CC0A8526DB23C8005BDCFF /* Assets.xcassets */,
 				54CC0A8726DB23C8005BDCFF /* LaunchScreen.storyboard */,
 				54CC0A8A26DB23C8005BDCFF /* Info.plist */,
@@ -125,6 +178,7 @@
 		54CC0A9026DB2425005BDCFF /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				5473BC5F26E23A9100C7F85B /* Connections */,
 				54CC0A9A26DB2425005BDCFF /* ActivityView+Demo.swift */,
 				5474437226DBF12600590CE7 /* DefaultStorage+Demo.swift */,
 				54CC0A9426DB2425005BDCFF /* FittingGeometry+Demo.swift */,
@@ -138,6 +192,8 @@
 				54CC0A9926DB2425005BDCFF /* ScrollView+Demo.swift */,
 				5410991126DC5F29002B08CA /* TextView+Demo.swift */,
 				5470D20F26DE9B95009C92DF /* UIKitView+Demo.swift */,
+				5470D21226DEA7FA009C92DF /* WebViewDemo.swift */,
+				5473BC7026E23C2D00C7F85B /* ConnectionsDemo.swift */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -168,6 +224,7 @@
 				544EC4B226DB25E800818626 /* ScaledMetric */,
 				5474437526DBFCB800590CE7 /* DefaultStorage */,
 				5410991426DC6041002B08CA /* TextView */,
+				5473BC6E26E23AD700C7F85B /* Connections */,
 			);
 			productName = Demo;
 			productReference = 54CC0A7926DB23C6005BDCFF /* Demo.app */;
@@ -207,6 +264,7 @@
 				544EC4B126DB25E800818626 /* XCRemoteSwiftPackageReference "ScaledMetric" */,
 				5474437426DBFCB800590CE7 /* XCRemoteSwiftPackageReference "DefaultStorage" */,
 				5410991326DC6041002B08CA /* XCRemoteSwiftPackageReference "TextView" */,
+				5473BC6D26E23AD700C7F85B /* XCRemoteSwiftPackageReference "Connections" */,
 			);
 			productRefGroup = 54CC0A7A26DB23C6005BDCFF /* Products */;
 			projectDirPath = "";
@@ -235,20 +293,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				54CC0AA226DB2425005BDCFF /* Presentation+Demo.swift in Sources */,
+				5473BC6A26E23AA400C7F85B /* ContactView+Sections.swift in Sources */,
 				54CC0AA326DB2425005BDCFF /* ScrollView+Demo.swift in Sources */,
 				54CC0AA426DB2425005BDCFF /* ActivityView+Demo.swift in Sources */,
 				54CC0A7D26DB23C6005BDCFF /* AppDelegate.swift in Sources */,
 				54CC0A9B26DB2425005BDCFF /* MediaBrowser+Demo.swift in Sources */,
+				5473BC7126E23C2D00C7F85B /* ConnectionsDemo.swift in Sources */,
 				5470D21026DE9B95009C92DF /* UIKitView+Demo.swift in Sources */,
+				5470D21326DEA7FA009C92DF /* WebViewDemo.swift in Sources */,
 				54CC0A9E26DB2425005BDCFF /* FittingGeometry+Demo.swift in Sources */,
+				5470D21726DEEB6D009C92DF /* ContentView.swift in Sources */,
 				54CC0A9C26DB2425005BDCFF /* ScaledMetric+Demo.swift in Sources */,
+				5473BC6826E23AA400C7F85B /* ContactView+Helpers.swift in Sources */,
 				54CC0AA026DB2425005BDCFF /* Refreshable+Demo.swift in Sources */,
 				54CC0AA126DB2425005BDCFF /* LayoutReader+Demo.swift in Sources */,
 				54CC0AA626DB2437005BDCFF /* RootView.swift in Sources */,
 				54CC0A7F26DB23C6005BDCFF /* SceneDelegate.swift in Sources */,
+				5473BC7326E23DF900C7F85B /* Color.swift in Sources */,
+				5473BC6926E23AA400C7F85B /* ContactRow.swift in Sources */,
 				540FE97226DB2CFD00F84266 /* RoundedButton.swift in Sources */,
+				5473BC6726E23AA400C7F85B /* ContactListView.swift in Sources */,
+				5473BC6B26E23AA400C7F85B /* ContactView.swift in Sources */,
 				5410991226DC5F29002B08CA /* TextView+Demo.swift in Sources */,
 				54CC0A9F26DB2425005BDCFF /* MediaPicker+Demo.swift in Sources */,
+				5473BC6C26E23AA400C7F85B /* GroupListView.swift in Sources */,
 				5474437326DBF12600590CE7 /* DefaultStorage+Demo.swift in Sources */,
 				54EA0B7926DB505900E80F28 /* PageView+Demo.swift in Sources */,
 			);
@@ -536,6 +604,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		5473BC6D26E23AD700C7F85B /* XCRemoteSwiftPackageReference "Connections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUI-Plus/Connections";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		5474437426DBFCB800590CE7 /* XCRemoteSwiftPackageReference "DefaultStorage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftUI-plus/DefaultStorage";
@@ -586,6 +662,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 544EC4B126DB25E800818626 /* XCRemoteSwiftPackageReference "ScaledMetric" */;
 			productName = ScaledMetric;
+		};
+		5473BC6E26E23AD700C7F85B /* Connections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5473BC6D26E23AD700C7F85B /* XCRemoteSwiftPackageReference "Connections" */;
+			productName = Connections;
 		};
 		5474437526DBFCB800590CE7 /* DefaultStorage */ = {
 			isa = XCSwiftPackageProductDependency;

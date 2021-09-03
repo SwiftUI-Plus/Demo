@@ -7,26 +7,27 @@ struct RootView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(demos.indices, id: \.self) { index in
+                ForEach(demos, id: \.0) { demo in
                     NavigationLink(
-                        demos[index].0,
-                        destination: demos[index].1
-                            .navigationBarTitle(demos[index].0)
+                        demo.0,
+                        destination: demo.1
+                            .navigationBarTitle(demo.0)
                     )
                 }
             }
             .navigationBarTitle("Demos")
-            .listStyle(GroupedListStyle())
 
             Text("Select a demo")
                 .foregroundColor(.secondary)
         }
         .navigationStyle(sizeClass: sizeClass ?? .compact)
+        .insetGrouped()
     }
 
     private var demos: [(String, AnyView)] {
         [
             ("Activity View", AnyView(ActvivityViewDemo())),
+            ("Connections", AnyView(ConnectionsDemo())),
             ("Default Storage", AnyView(DefaultStorageDemo())),
             ("Fitting Geometry", AnyView(FittingGeometryDemo())),
             ("Layout Reader", AnyView(LayoutReaderDemo())),
@@ -44,7 +45,18 @@ struct RootView: View {
 
 }
 
-extension View {
+private extension View {
+    @ViewBuilder
+    func insetGrouped() -> some View {
+        if #available(iOS 14, *) {
+            listStyle(InsetGroupedListStyle())
+        } else {
+            listStyle(GroupedListStyle())
+        }
+    }
+}
+
+private extension View {
     @ViewBuilder
     func navigationStyle(sizeClass: UserInterfaceSizeClass) -> some View {
         if sizeClass == .compact || UIDevice.current.userInterfaceIdiom == .phone {
