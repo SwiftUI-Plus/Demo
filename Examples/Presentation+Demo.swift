@@ -8,7 +8,7 @@ struct PresentationDemo: View {
     @State private var showDissolve: Bool = false
 
     var body: some View {
-        VStack(spacing: 10) {
+        List {
             button(titled: "Show sheet") { showSheet = true }
                 .present(isPresented: $showSheet) {
                     Presented(subtitle: "Pull to dismiss still works")
@@ -33,7 +33,6 @@ struct PresentationDemo: View {
                         .navigationBarTitle("Dissolve")
                 }
         }
-        .padding()
     }
 
     private func button(titled title: String, action: @escaping () -> Void) -> some View {
@@ -43,9 +42,10 @@ struct PresentationDemo: View {
             HStack {
                 Text(title)
                 Spacer()
+                Image(systemName: "chevron.right")
             }
         }
-        .buttonStyle(RoundedButtonStyle())
+        .foregroundColor(.primary)
     }
 }
 
@@ -57,7 +57,8 @@ struct Presented: View {
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
-                Text(subtitle).foregroundColor(.secondary)
+                Text(subtitle)
+                    .foregroundColor(.secondary)
 
                 Spacer()
 
@@ -67,14 +68,13 @@ struct Presented: View {
                     HStack {
                         Spacer()
                         Text("Tap to Dismiss")
+                            .multilineTextAlignment(.center)
                         Spacer()
                     }
                 }
                 .buttonStyle(RoundedButtonStyle())
-
-                Spacer()
             }
-            .padding(20)
+            .padding(.horizontal, 20)
             .navigationBarTitle("Presented")
         }
         .navigationViewStyle(StackNavigationViewStyle())

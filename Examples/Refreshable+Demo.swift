@@ -3,21 +3,33 @@ import Refreshable
 
 struct RefreshableDemo: View {
     var body: some View {
-        VStack(spacing: 40) {
-            RefreshButton()
-                .onRefresh { refresh in
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                        refresh.wrappedValue.end()
-                    }
-                }
+        VStack {
+            ZStack {
+                Rectangle()
+                    .foregroundColor(.gray)
 
-            RefreshButton()
+                RefreshButton()
+                    .onRefresh { refresh in
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                            refresh.wrappedValue.end()
+                        }
+                    }
+            }
+
+            ZStack {
+                Rectangle()
+                    .foregroundColor(.gray)
+
+                RefreshButton()
+            }
         }
-        .padding()
+        .padding(.horizontal, 20)
     }
 }
 
 struct RefreshButton: View {
+    @Namespace private var animation
+
     var body: some View {
         RefreshableView { phase in
             switch phase {
@@ -28,11 +40,27 @@ struct RefreshButton: View {
                     Text("Refresh")
                 }
             case .refreshing:
-                Text("Refreshing...")
-                    .foregroundColor(.secondary)
+                VStack(spacing: 10) {
+                    if #available(iOS 14, *) {
+                        ProgressView()
+                    }
+
+                    Text("Refreshing...")
+                        .foregroundColor(.secondary)
+                }
             case .notSupported:
-                Text("Refresh not supported")
+                VStack(spacing: 5) {
+                    Text("Refresh not supported")
+
+                    Group {
+                        Text("The ")
+                            + Text("onRefresh").font(.system(.body, design: .monospaced))
+                            + Text(" modifier was not added to this hierarchy")
+                    }
                     .foregroundColor(.secondary)
+                }
+                .multilineTextAlignment(.center)
+                .padding()
             }
         }
     }

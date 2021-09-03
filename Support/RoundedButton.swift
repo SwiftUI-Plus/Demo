@@ -4,10 +4,11 @@ struct RoundedButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .foregroundColor(Color(.systemBackground))
+            .font(.headline)
             .padding()
             .background(
                 RoundedRectangle(cornerRadius: 13)
-                    .foregroundColor(.blue)
+                    .foregroundColor(.primary)
                     .opacity(configuration.isPressed ? 0.5 : 1)
             )
             .animation(.default, value: configuration.isPressed)

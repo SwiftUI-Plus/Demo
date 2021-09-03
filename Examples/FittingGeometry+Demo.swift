@@ -4,28 +4,30 @@ import Containers
 struct FittingGeometryDemo: View {
     var body: some View {
         ScrollView {
-            VStack {
-                FittingGeometryReader { _ in
-                    ZStack {
-                        Rectangle()
-                            .foregroundColor(.blue)
-                            .frame(height: 44)
+            FittingGeometryReader { geo in
+                ZStack {
+                    Rectangle()
+                        .foregroundColor(.blue)
 
-                        Text("Content")
-                            .foregroundColor(Color(.systemBackground))
+                    VStack(spacing: 10) {
+                        Text("Fitting height: \(Int(geo.size.height))")
+                            .font(.headline)
+
+                        Text(String.loremLong)
                     }
-                    .padding()
+                    .padding(20)
                 }
-                .background(Color.gray)
-                .multilineTextAlignment(.center)
+            }
+            .padding(.horizontal, 20)
+            .background(Color.gray)
+            .multilineTextAlignment(.center)
 
-                HStack {
-                    Text("Note the GeometryReader hugs its content instead of taking up all available space.")
-                        .font(.footnote)
-                        .foregroundColor(.secondary)
+            HStack {
+                Text("Note the GeometryReader hugs its content instead of taking up all available space.")
+                    .font(.footnote)
+                    .foregroundColor(.secondary)
 
-                    Spacer()
-                }
+                Spacer()
             }
             .padding(.horizontal, 20)
         }

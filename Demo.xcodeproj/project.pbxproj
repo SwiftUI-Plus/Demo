@@ -46,6 +46,7 @@
 		54CC0AA426DB2425005BDCFF /* ActivityView+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC0A9A26DB2425005BDCFF /* ActivityView+Demo.swift */; };
 		54CC0AA626DB2437005BDCFF /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC0AA526DB2437005BDCFF /* RootView.swift */; };
 		54EA0B7926DB505900E80F28 /* PageView+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EA0B7826DB505900E80F28 /* PageView+Demo.swift */; };
+		54F01D9126E24A650019C66F /* Lorem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F01D9026E24A650019C66F /* Lorem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		54CC0A9A26DB2425005BDCFF /* ActivityView+Demo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ActivityView+Demo.swift"; sourceTree = "<group>"; };
 		54CC0AA526DB2437005BDCFF /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		54EA0B7826DB505900E80F28 /* PageView+Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PageView+Demo.swift"; sourceTree = "<group>"; };
+		54F01D9026E24A650019C66F /* Lorem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lorem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			children = (
 				540FE97126DB2CFD00F84266 /* RoundedButton.swift */,
 				5473BC7226E23DF900C7F85B /* Color.swift */,
+				54F01D9026E24A650019C66F /* Lorem.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				5410991226DC5F29002B08CA /* TextView+Demo.swift in Sources */,
 				54CC0A9F26DB2425005BDCFF /* MediaPicker+Demo.swift in Sources */,
 				5473BC6C26E23AA400C7F85B /* GroupListView.swift in Sources */,
+				54F01D9126E24A650019C66F /* Lorem.swift in Sources */,
 				5474437326DBF12600590CE7 /* DefaultStorage+Demo.swift in Sources */,
 				54EA0B7926DB505900E80F28 /* PageView+Demo.swift in Sources */,
 			);

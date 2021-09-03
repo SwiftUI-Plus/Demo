@@ -10,16 +10,34 @@ struct MediaPickerDemo: View {
     @State private var importError: ImportError?
 
     var body: some View {
-        Button {
-            showActions = true
-        } label: {
-            if let data = data, let image = UIImage(data: data) {
-                Image(uiImage: image)
-                    .resizable()
-                    .scaledToFit()
-            } else {
-                Text("Import")
+        VStack {
+            HStack {
+                Text("Tap the button to see the media pickers.")
+                    .foregroundColor(.secondary)
+                Spacer()
             }
+            .padding(.horizontal, 20)
+            
+            Spacer()
+            
+            Button {
+                showActions = true
+            } label: {
+                if let data = data, let image = UIImage(data: data) {
+                    Image(uiImage: image)
+                        .resizable()
+                        .scaledToFit()
+                } else {
+                    HStack {
+                        Spacer()
+                        Image(systemName: "photo")
+                        Text("Import Media")
+                        Spacer()
+                    }
+                }
+            }
+            .buttonStyle(preferPlain: data != nil)
+            .padding(.horizontal, 20)
         }
         .actionSheet(isPresented: $showActions) {
             ActionSheet(title: Text("Import a photo"), buttons: [
@@ -37,7 +55,6 @@ struct MediaPickerDemo: View {
                 dismissButton: .default(Text("OK"))
             )
         }
-        .buttonStyle(preferPlain: data != nil)
     }
 
     private func handleResult(_ result: Result<URL, Error>) {

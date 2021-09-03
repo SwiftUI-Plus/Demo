@@ -5,16 +5,30 @@ struct ActvivityViewDemo: View {
     @State private var item: ActivityItem?
 
     var body: some View {
-        Button {
-            item = ActivityItem(items: "Some text to share", activities: [CustomActivity()], excludedTypes: [])
-        } label: {
+        VStack {
             HStack {
-                Image(systemName: "square.and.arrow.up")
-                Text("Share")
+                Text(String.loremLong)
+                    .foregroundColor(.secondary)
+
+                Spacer()
             }
+
+            Spacer()
+
+            Button {
+                item = ActivityItem(items: String.loremLong, activities: [CustomActivity()], excludedTypes: [])
+            } label: {
+                HStack {
+                    Spacer()
+                    Image(systemName: "square.and.arrow.up")
+                    Text("Show share sheet")
+                    Spacer()
+                }
+            }
+            .buttonStyle(RoundedButtonStyle())
         }
-        .buttonStyle(RoundedButtonStyle())
         .activitySheet($item)
+        .padding(.horizontal, 20)
     }
 }
 

@@ -10,7 +10,7 @@ struct LayoutReaderDemo: View {
                         .font(.headline)
                         .padding()
                 }
-                .foregroundColor(Color(.systemBackground))
+                .foregroundColor(.white)
                 .multilineTextAlignment(.center)
                 .frame(maxWidth: layout.size(in: .readable).width)
                 .background(Color.blue)
