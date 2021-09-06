@@ -183,6 +183,7 @@
 			children = (
 				5473BC5F26E23A9100C7F85B /* Connections */,
 				54CC0A9A26DB2425005BDCFF /* ActivityView+Demo.swift */,
+				5473BC7026E23C2D00C7F85B /* ConnectionsDemo.swift */,
 				5474437226DBF12600590CE7 /* DefaultStorage+Demo.swift */,
 				54CC0A9426DB2425005BDCFF /* FittingGeometry+Demo.swift */,
 				54CC0A9726DB2425005BDCFF /* LayoutReader+Demo.swift */,
@@ -196,7 +197,6 @@
 				5410991126DC5F29002B08CA /* TextView+Demo.swift */,
 				5470D20F26DE9B95009C92DF /* UIKitView+Demo.swift */,
 				5470D21226DEA7FA009C92DF /* WebViewDemo.swift */,
-				5473BC7026E23C2D00C7F85B /* ConnectionsDemo.swift */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
