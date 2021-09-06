@@ -41,10 +41,10 @@ struct MediaPickerDemo: View {
         }
         .actionSheet(isPresented: $showActions) {
             ActionSheet(title: Text("Import a photo"), buttons: [
-                .default(Text("Take a photo")) { showCamera = true },
-                .default(Text("Choose from library")) { showPicker = true },
+                camera,
+                library,
                 .cancel()
-            ])
+            ].compactMap { $0 })
         }
         .camera(isPresented: $showCamera, onComplete: handleResult)
         .imagePicker(isPresented: $showPicker, onComplete: handleResult)
@@ -55,6 +55,16 @@ struct MediaPickerDemo: View {
                 dismissButton: .default(Text("OK"))
             )
         }
+    }
+
+    private var camera: Alert.Button? {
+        UIImagePickerController.isSourceTypeAvailable(.camera)
+        ? .default(Text("Take a photo")) { showCamera = true } : nil
+    }
+
+    private var library: Alert.Button? {
+        UIImagePickerController.isSourceTypeAvailable(.photoLibrary)
+        ? .default(Text("Choose from library")) { showPicker = true } : nil
     }
 
     private func handleResult(_ result: Result<URL, Error>) {
