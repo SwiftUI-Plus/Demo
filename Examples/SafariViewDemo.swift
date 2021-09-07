@@ -31,11 +31,23 @@ struct SafariViewDemo: View {
             .buttonStyle(RoundedButtonStyle())
         }
         .padding(.horizontal, 20)
-        .safari(url: $url) {
 
-        } configuration: { url in
-            Safari(dismissButtonStyle: .close)
+        Button {
+            url = URL(string: "")!
+        } label: {
+            Text("Show Safari")
         }
+        .safari(url: $url, style: .fullScreen) { url in
+            Safari(
+                configuration: SFSafariViewController.Configuration(),
+                activities: { url, title in [] },
+                excludedActivities: { url, title in [] },
+                preferredBarTintColor: .systemBackground,
+                preferredControlTintColor: .label,
+                dismissButtonStyle: .close
+            )
+        }
+
     }
 }
 
