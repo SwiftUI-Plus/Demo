@@ -9,7 +9,10 @@ struct ContactListView: View {
     @State private var promptAddContact: Bool = false
     @State private var error: ContactsError?
 
+    private let group: CNGroup?
+
     init(group: CNGroup?) {
+        self.group = group
         _contacts = FetchContactList(
             keysToFetch: [
                 .type,
@@ -74,7 +77,7 @@ struct ContactListView: View {
         }
         .alert(item: $error) { error in
             Alert(
-                title: Text("Failed to delete"),
+                title: Text("Failed to add"),
                 message: Text(error.localizedDescription),
                 dismissButton: .default(Text("OK"))
             )
@@ -100,8 +103,14 @@ struct ContactListView: View {
             contact.phoneNumbers = [CNLabeledValue(label: "work", value: phone)]
 
             request.add(contact, toContainerWithIdentifier: _contacts.store.defaultContainerIdentifier())
+
+            if let group = group {
+                request.addMember(contact, to: group)
+            }
+
             try _contacts.store.execute(request)
         } catch {
+            print(error)
             self.error = ContactsError(underlyingError: error)
         }
     }

@@ -59,7 +59,8 @@ extension ContactView {
 public struct ContactsError: LocalizedError, Identifiable {
     public var id: Int { (underlyingError as NSError).code }
     var underlyingError: Swift.Error
+
     public var errorDescription: String? {
-        underlyingError.localizedDescription
+        (underlyingError as NSError).localizedFailureReason
     }
 }
