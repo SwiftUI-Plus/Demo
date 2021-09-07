@@ -10,6 +10,7 @@
 		540FE97226DB2CFD00F84266 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FE97126DB2CFD00F84266 /* RoundedButton.swift */; };
 		5410991226DC5F29002B08CA /* TextViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5410991126DC5F29002B08CA /* TextViewDemo.swift */; };
 		5410991526DC6041002B08CA /* TextView in Frameworks */ = {isa = PBXBuildFile; productRef = 5410991426DC6041002B08CA /* TextView */; };
+		5448E5C926E7F8A300E82DC0 /* Browsers in Frameworks */ = {isa = PBXBuildFile; productRef = 5448E5C826E7F8A300E82DC0 /* Browsers */; };
 		544EC49E26DB25B500818626 /* ActivityView in Frameworks */ = {isa = PBXBuildFile; productRef = 544EC49D26DB25B500818626 /* ActivityView */; };
 		544EC4A126DB25BC00818626 /* Containers in Frameworks */ = {isa = PBXBuildFile; productRef = 544EC4A026DB25BC00818626 /* Containers */; };
 		544EC4A726DB25C800818626 /* MailView in Frameworks */ = {isa = PBXBuildFile; productRef = 544EC4A626DB25C800818626 /* MailView */; };
@@ -95,6 +96,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5474437626DBFCB800590CE7 /* DefaultStorage in Frameworks */,
+				5448E5C926E7F8A300E82DC0 /* Browsers in Frameworks */,
 				544EC4AA26DB25D100818626 /* Media in Frameworks */,
 				544EC4A126DB25BC00818626 /* Containers in Frameworks */,
 				5473BC6F26E23AD700C7F85B /* Connections in Frameworks */,
@@ -234,6 +236,7 @@
 				5474437526DBFCB800590CE7 /* DefaultStorage */,
 				5410991426DC6041002B08CA /* TextView */,
 				5473BC6E26E23AD700C7F85B /* Connections */,
+				5448E5C826E7F8A300E82DC0 /* Browsers */,
 			);
 			productName = Demo;
 			productReference = 54CC0A7926DB23C6005BDCFF /* Demo.app */;
@@ -274,6 +277,7 @@
 				5474437426DBFCB800590CE7 /* XCRemoteSwiftPackageReference "DefaultStorage" */,
 				5410991326DC6041002B08CA /* XCRemoteSwiftPackageReference "TextView" */,
 				5473BC6D26E23AD700C7F85B /* XCRemoteSwiftPackageReference "Connections" */,
+				5448E5C726E7F8A300E82DC0 /* XCRemoteSwiftPackageReference "Browsers" */,
 			);
 			productRefGroup = 54CC0A7A26DB23C6005BDCFF /* Products */;
 			projectDirPath = "";
@@ -560,6 +564,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		5448E5C726E7F8A300E82DC0 /* XCRemoteSwiftPackageReference "Browsers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUI-Plus/Browsers.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		544EC49C26DB25B500818626 /* XCRemoteSwiftPackageReference "ActivityView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftUI-Plus/ActivityView.git";
@@ -639,6 +651,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5410991326DC6041002B08CA /* XCRemoteSwiftPackageReference "TextView" */;
 			productName = TextView;
+		};
+		5448E5C826E7F8A300E82DC0 /* Browsers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5448E5C726E7F8A300E82DC0 /* XCRemoteSwiftPackageReference "Browsers" */;
+			productName = Browsers;
 		};
 		544EC49D26DB25B500818626 /* ActivityView */ = {
 			isa = XCSwiftPackageProductDependency;
