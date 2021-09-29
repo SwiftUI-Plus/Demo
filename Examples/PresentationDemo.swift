@@ -22,7 +22,7 @@ struct PresentationDemo: View {
                 }
 
             button(titled: "Show fullscreen") { showFullscreen = true }
-                .present(isPresented: $showFullscreen, style: .fullScreen) {
+                .present(isPresented: $showFullscreen, style: .overFullScreen) {
                     Presented(subtitle: "The view is presented fullscreen")
                         .navigationBarTitle("Fullscreen")
                 }

@@ -19,7 +19,7 @@ struct SafariViewDemo: View {
                 let config = SFSafariViewController.Configuration()
                 config.entersReaderIfAvailable = true
 
-                url = URL(string: "https://google.com")!
+                url = URL(string: "https://benkau.com")!
             } label: {
                 HStack {
                     Spacer()
