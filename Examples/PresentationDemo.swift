@@ -74,7 +74,7 @@ struct Presented: View {
                 }
                 .buttonStyle(RoundedButtonStyle())
             }
-            .padding(.horizontal, 20)
+            .padding([.horizontal, .bottom], 20)
             .navigationBarTitle("Presented")
         }
         .navigationViewStyle(StackNavigationViewStyle())

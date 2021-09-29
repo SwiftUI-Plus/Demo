@@ -609,7 +609,7 @@
 			repositoryURL = "https://github.com/SwiftUI-Plus/Presentation.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 1.0.1;
 			};
 		};
 		544EC4AE26DB25E000818626 /* XCRemoteSwiftPackageReference "Refreshable" */ = {
